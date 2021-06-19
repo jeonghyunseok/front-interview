@@ -66,3 +66,75 @@
 ## 바벨이란?
 
 -   ES6 버전을 ES5로 변환해서 IE11에서도 코드가 작동하도록 한다.
+
+
+##  Vue.js란?
+
+-   사용자 인터페이스를 만들기 위한 SPA 프로그레시브 프레임워크 입니다. 
+-   MVVM 패턴을 가져왔다
+
+## MVVM 패턴이란?
+
+-   Model - View - ViewModel의 약자
+-   MVC  패턴에서 Controller가 ViewModel로 바뀌었다.
+-   ViewModel 은 Model과는 데이터를 주고 받고, View와는 Binding, Command로 연결된다.
+
+뷰와 리액트의 차이점
+
+뷰는 프레임워크이고 리액트는 라이브러리이다.
+
+프레임워크와 라이브러리의 차이점은 누가 여러가지 할 일을 자동으로 해주느냐 아니면 직접하느냐에 차이에 있다.
+
+nuxt.js란?
+
+node.js란?
+
+## 뷰 인스턴스란?
+
+-   Vue.js 화면개발의 필수 단위로 new Vue({})로 생성한다. 
+-    el(인스턴스 화면의 시작점), template(화면에 표시되는 요소), data(반응형이 반영된 데이터), methods(화면과 동작을 이벤트로 제어), life cycle hook와 같은 인스턴스 옵션 속성을 포함할 수 있다.
+
+## 뷰 라이프사이클
+
+-   beforeCreate : 가장 먼젖 실행되는 훅으로 data와 method가 호출 전이다.
+-   created : data, computed, methods, watch 등이 완료된 시점으로 data를 사용할 수 있지만 템플릿이 마운트 되기 전이기 때문에 DOM에 직접 접근을 할 수 없다.
+-   beforeMount : 거의 사용되지 않습니다. data 초기 세팅에는 created를 DOM에 직접 접근은 mounted를 사용합니다.
+-   mounted: 컴포넌트가 DOM에 추가 된 후 호출되어 DOM에 접근이 가능합니다. 하지만 렌더링이 모두 완료된 상태에서의 작업을 하기 위해서는 this.$nextTick(()=>{});을 사용해야합니다. 
+-   beforeUpdate : 컴포넌트가 재랜더링 될 때 호출 됩니다. 이미 업데이트 된 값을 가지고 있지만 이 훅 안에서 값이 변경된다고 해서 훅이 재호출 되지 않습니다.
+-   updated : DOM 재랜더링 후 호출되고 재랜더링이 끝난 확신 후 작업을 위해서는 this.$nextTick(()=>{}); 을 사용해야한다. updated 훅에서 data를 수정하면 무한루프에 빠진다.
+-   beforeDestroy : 컴포넌트 제거 직전에 사용된다. 
+-   destroyed : 컴포넌트가 제거 된 후 호출된다. 
+
+# 뷰 컴포넌트
+
+뷰의 화면을 분할하여 개발할 수 있는 뷰의 기능 
+
+## **참고링크**
+
+[https://kr.vuejs.org/v2/guide/index.html](https://kr.vuejs.org/v2/guide/index.html)
+
+[
+
+시작하기 — Vue.js
+
+Vue.js - 프로그레시브 자바스크립트 프레임워크
+
+kr.vuejs.org
+
+
+
+](https://kr.vuejs.org/v2/guide/index.html)
+
+[https://medium.com/witinweb/vue-js-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-7780cdd97dd4](https://medium.com/witinweb/vue-js-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-7780cdd97dd4)
+
+[
+
+Vue.js 2.0 라이프사이클 이해하기
+
+최근 사내에서 Vue.js로 프로젝트를 진행하고 있다. 차근차근 꼼꼼히 프레임웤을 이해하며 시작하지 않으니 여러 우여곡절이 많았다. 정리 차원에서 하나씩 포스팅하면 좋을것 같다는 생각을 했
+
+medium.com
+
+
+
+](https://medium.com/witinweb/vue-js-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-7780cdd97dd4)
