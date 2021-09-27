@@ -99,6 +99,12 @@
 -   MVC  패턴에서 Controller가 ViewModel로 바뀌었다.
 -   ViewModel 은 Model과는 데이터를 주고 받고, View와는 Binding, Command로 연결된다.
 
+## MVC 패턴이란?
+
+- Model : 애플리케이션의 정보, 데이타
+- View :  사용자 인터페이스 요소
+- Controller : 사용자의 액션에 대한 "이벤트"들을 처리하는 부분
+
 ## 뷰와 리액트의 차이점
 
 -   뷰는 프레임워크이고 리액트는 라이브러리이다.
